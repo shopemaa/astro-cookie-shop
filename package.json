@@ -27,5 +27,9 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.8",
     "sharp": "^0.31.3"
+  },
+  "engines": {
+    "npm": ">=7.24.0",
+    "node": ">=17.00.0"
   }
 }
