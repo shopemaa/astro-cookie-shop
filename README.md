@@ -1,16 +1,14 @@
 # Cookie Store - Astro Starter Template 🛸
 
-Cookie Store is a starter template for selling product from home. Built with Astro, Shopemaa Commerce & TailwindCSS.
+Cookie Store is a starter template for online product seller's. Built with Astro, Shopemaa Commerce & TailwindCSS.
 
 This Free Template is sponsored by [Web3Templates](https://web3templates.com)
 
 ## Live Demo
 
-### [https://astroship.web3templates.com/](https://astroship.web3templates.com/)
+### [https://cookie-store.shopemaa.com](https://cookie-store.shopemaa.com)
 
-## Deploy on Vercel
-
-Click the below link to deploy this template on Vercel
+## Demo
 
 * Home
 
