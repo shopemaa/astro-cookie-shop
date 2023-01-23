@@ -12,7 +12,14 @@ This Free Template is sponsored by [Web3Templates](https://web3templates.com)
 
 Click the below link to deploy this template on Vercel
 
-![image](https://user-images.githubusercontent.com/1884712/200831799-10ef2456-a02e-4068-b580-4b5326f0b33b.png)
+* Home
+
+![image](https://github.com/shopemaa/astro-cookie-shop/blob/main/resources/screen1.png?raw=true)
+
+* Cart
+
+![image](https://github.com/shopemaa/astro-cookie-shop/blob/main/resources/screen2.png?raw=true)
+
 
 ### Pagespeed Score
 
@@ -28,9 +35,9 @@ Alternatively, you can clone the project directly from this repo to your local s
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/surjithctly/astroship.git myProjectName
+git clone git@github.com:shopemaa/astro-cookie-store.git myProjectName
 # or
-git clone https://github.com/surjithctly/astroship.git .
+git clone git@github.com:shopemaa/astro-cookie-store.git .
 ```
 
 The `.` will clone it to the current directory so make sure you are inside your project folder first.
@@ -103,6 +110,10 @@ Any static assets, like images, can be placed in the `public/` directory.
 ## TailwindCSS
 
 TailwindCSS is already configured in this repo, so you can start using it without any installation.
+
+## Checkout powered by Shopemaa Commerce
+
+[Shopemaa Commerce](https://shopemaa.com)
 
 ## Credits
 
