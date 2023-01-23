@@ -26,8 +26,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "Sweet Treats Bakery"
+  : "Sweet Treats Bakery - Your favourite cookie store";
 ---
 
 <!DOCTYPE html>
@@ -37,6 +37,17 @@ const makeTitle = title
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+
+    <link rel="stylesheet" href="https://shopemaa.link/themes/monalisa/css/tailwind/tailwind.min.css" is:inline>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" is:inline></script>
+    <script src="https://shopemaa.link/themes/monalisa/js/main.js" is:inline></script>
+    <script src="https://js.stripe.com/v3/" is:inline></script>
+    <script src="https://cdn.jsdelivr.net/gh/shopemaa/shopemaa-checkout@v0.0.6/shopemaa.js" is:inline></script>
+    <script>
+      window.onload = function () {
+        initShopemaa("831da0719aee4c309fd8913dd3311a2e3bf4fa25d13d460ab7d3d1ae15cbe903db72fee086eb4032ab3ff3f662fa08ce", "89d6788c3d2e4a4eb32ce5169b27dc6ea9f485e6a5b740b7bef724fa2d7fa1b4");
+      }
+    </script>
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO

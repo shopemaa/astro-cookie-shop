@@ -1,6 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/cookie_one.jpeg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
@@ -21,34 +21,32 @@ import { Icon } from "astro-icon";
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Your favourite cookie store
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+      Introducing our delicious cookie biscuit! Made with only the finest ingredients, our cookie biscuit is the perfect treat for any occasion. Crispy on the outside and soft on the inside, it's the perfect balance of sweet and savory. Order now and taste the difference!
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Download for Free
-      </Link>
       <Link
         size="lg"
         style="outline"
         rel="noopener"
-        href="https://github.com/surjithctly/astroship"
+        href=""
+        onclick="event.preventDefault()"
         class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        Github Repo
+        >
+        $5.00/tk
       </Link>
+      <Link
+        href=""
+        onclick="event.preventDefault()"
+        class="flex gap-1 items-center justify-center shopemaa-buy-btn"
+        data-product-id="ad9060e1-5104-4ba4-bd36-74060a01d533"
+        rel="noopener">
+        <Icon class="text-white w-5 h-5" name="bx:bxs-cart" />
+
+        Add to Cart
+        </Link>
     </div>
   </div>
 </main>
