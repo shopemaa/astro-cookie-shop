@@ -50,7 +50,15 @@ yarn install
 pnpm install
 ```
 
-### 3. Start development Server
+### 3. Environment Setup
+
+Create an `.env` file & set store `key` & `secret`.
+```bash
+PUBLIC_SHOPEMAA_KEY={APP_KEY}
+PUBLIC_SHOPEMAA_SECRET={APP_SECRET}
+```
+
+### 4. Start development Server
 
 ```bash
 npm run dev

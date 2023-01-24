@@ -28,6 +28,9 @@ const { title } = Astro.props;
 const makeTitle = title
   ? title + " | " + "Sweet Treats Bakery"
   : "Sweet Treats Bakery - Your favourite cookie store";
+
+const shopemaaKey = import.meta.env.PUBLIC_SHOPEMAA_KEY;
+const shopemaaSecret = import.meta.env.PUBLIC_SHOPEMAA_SECRET;
 ---
 
 <!DOCTYPE html>
@@ -45,9 +48,16 @@ const makeTitle = title
     <script src="https://cdn.jsdelivr.net/gh/shopemaa/shopemaa-checkout@v0.0.6/shopemaa.js" is:inline></script>
     <script>
       window.onload = function () {
-        initShopemaa("831da0719aee4c309fd8913dd3311a2e3bf4fa25d13d460ab7d3d1ae15cbe903db72fee086eb4032ab3ff3f662fa08ce", "89d6788c3d2e4a4eb32ce5169b27dc6ea9f485e6a5b740b7bef724fa2d7fa1b4");
+        let shopemaaKey = document.getElementById("shopemaaKey");
+        let shopemaaSecret = document.getElementById("shopemaaSecret");
+        if (shopemaaKey != null && shopemaaSecret != null) {
+            initShopemaa(shopemaaKey.value, shopemaaSecret.value);
+        }
       }
     </script>
+
+    <input type="hidden" id="shopemaaKey" value={ shopemaaKey }>
+    <input type="hidden" id="shopemaaSecret" value={ shopemaaSecret }>
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
